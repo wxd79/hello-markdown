@@ -67,6 +67,7 @@ MPE插件：
 - Gitlab
 - Gitblit
 - Gitee
+- ...
 
 这里以Gitlab为例：
 
