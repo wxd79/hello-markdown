@@ -9,9 +9,9 @@ Markdown 由[John Gruber](https://daringfireball.net/projects/markdown/)于2004�
 
 ### 1.1. Markdown vs 各路英豪
 
-> 我已经有MS Office Word了，为什么还要用Markdown？
-> PDF文件不好吗？为啥用Markdown？
-> 同样是标记语言Markdown比HTML好在哪里？
+> 我已经有MS Office Word了，为什么还要用Markdown？  
+> PDF文件不好吗？为啥用Markdown？  
+> 同样是标记语言Markdown比HTML好在哪里？  
 
 Markdown文件的优点：
 
