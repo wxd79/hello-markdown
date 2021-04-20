@@ -72,7 +72,13 @@ MPE插件：
 
 在项目的根目录生成`README.md`的文件。
 并将本文的内容拷贝进去。
-在项目的主页面，Gitlab会直接根据`README.md`的内容生成项目介绍页面：
+
+- 在项目的主页面，Gitlab会直接根据`README.md`的内容生成项目介绍页面：  
+    ![Gitlab](images/gitlab.png)
+- 在输入文字的界面（如Commit说明、Merge Request说明、issus说明等）基本也都支持Markdown  
+    ![Gitlab-commit1](images/gitlab-commit1.png)  
+    ![Gitlab-commit2](images/gitlab-commit2.png)  
+    ![Gitlab-commit3](images/gitlab-commit3.png)
 
 ## 2. 基础语法
 
@@ -109,7 +115,7 @@ Markdown中使用`#`符号（后跟半角空格）标记文章的标题。几级
     另起一段，我是一个新的段落。
     ```
 
-- 效果：    
+- 效果：  
     一行文字，注意本行最末尾以两个半角空格结尾。  
     另起一行。
 
@@ -125,7 +131,7 @@ Markdown中使用`#`符号（后跟半角空格）标记文章的标题。几级
     用*斜体*表示强调效果
     ```
 
-- 效果：    
+- 效果：  
     用*斜体*表示强调效果
 
 ### 2.2.2. 粗体
@@ -138,7 +144,7 @@ Markdown中使用`#`符号（后跟半角空格）标记文章的标题。几级
     用**粗体**表示强调效果
     ```
 
-- 效果：    
+- 效果：  
     用**粗体**表示强调效果
 
 ### 2.2.3. 转义
@@ -380,6 +386,7 @@ Markdown定义了两种列表：
         B --> C{条件a}
         C -->|a=1| D[结果1]
         C -->|a=2| E[结果2]
+        C -->|a=3| F[结果3]
         Z[横向流程图]
     ```
   
