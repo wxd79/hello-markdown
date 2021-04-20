@@ -9,6 +9,8 @@ Markdown 由[John Gruber](https://daringfireball.net/projects/markdown/)于2004�
 
 ### 1.1. Markdown vs 各路英豪
 
+开始介绍Markdown之前，可能诸位有这些疑问：
+
 > 我已经有MS Office Word了，为什么还要用Markdown？  
 > PDF文件不好吗？为啥用Markdown？  
 > 同样是标记语言Markdown比HTML好在哪里？  
@@ -41,9 +43,36 @@ Markdown文件的优点：
 
 ### 1.2. 使用方式
 
-#### 1.2.1. 主流IDE
+#### 1.2.1. VSCode + MPE
 
 在主流IDE中，基本都是以插件的方式支持。
+以VSCode为例，有很多差价提供了Markdown的支持，其中目前最有名的，当属插件`shd101wyy.markdown-preview-enhanced`(简称：MPE)。
+
+MPE插件：  
+![mpe](images/mpe.png)
+
+安装后，可以通过右上角插件提供的渲染视图查看Markdown文档。
+修改Markdown文件时，渲染视图会实时联动。  
+![mpe-veiw](images/mpe-view.png)
+
+在渲染视图上右击，可以将渲染好的Markdown文件保存成PDF等其他格式的文件。
+![mpe-veiw](images/mpe-saveas.png)
+
+#### 1.2.2 Gitlab
+
+绝大多数代码托管网站，都原生支持Markdown文件作为项目的介绍文档。
+包括：
+
+- Github
+- Gitlab
+- Gitblit
+- Gitee
+
+这里以Gitlab为例：
+
+在项目的根目录生成`README.md`的文件。
+并将本文的内容拷贝进去。
+在项目的主页面，Gitlab会直接根据`README.md`的内容生成项目介绍页面：
 
 ## 2. 基础语法
 
@@ -76,7 +105,7 @@ Markdown中使用`#`符号（后跟半角空格）标记文章的标题。几级
     ```markdown
     一行文字，注意本行最末尾以两个半角空格结尾。  
     另起一行。
-    
+
     另起一段，我是一个新的段落。
     ```
 
@@ -216,13 +245,13 @@ Markdown定义了两种列表：
 
     ```markdown
     鲁迅曾经说过：
-    > 这世上本没有路，走的人多了，便也成了路。
+    > 希望是附丽于存在的，有存在，便有希望，有希望，便是光明。
     ```
 
 - 效果：
 
     鲁迅曾经说过：
-    > 这世上本没有路，走的人多了，便也成了路。
+    > 希望是附丽于存在的，有存在，便有希望，有希望，便是光明。
 
 引用是可以嵌套的：
 
@@ -231,13 +260,13 @@ Markdown定义了两种列表：
     ```markdown
     前面写到：
     > 鲁迅曾经说过：
-    >> 这世上本没有路，走的人多了，便也成了路。
+    >> 希望是附丽于存在的，有存在，便有希望，有希望，便是光明。
     ```
 
 - 效果：
     前面写到：
     > 鲁迅曾经说过：
-    >> 这世上本没有路，走的人多了，便也成了路。
+    >> 希望是附丽于存在的，有存在，便有希望，有希望，便是光明。
 
 ### 2.5. 代码块
 
