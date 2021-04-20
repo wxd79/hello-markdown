@@ -420,9 +420,10 @@ Markdown定义了两种列表：
               测试报告                               : 48h
       ```
 
-## 4. 使用场景
+## 4. 参考资料
 
-### 4.1. 项目文档
-
-目前比较流行的代码托管网站，基本都支持将项目根目录下的`README.md`作为项目的默认说明文档。
-目前大家看到的这个文档效果，就是一个Gitlab项目的默认页面。
+- [Markdown中文网](http://markdown.p2hp.com/index.html)
+- [百度百科-markdown](https://baike.baidu.com/item/markdown/3245829?fr=aladdin)
+- [Gitlab.com](https://about.gitlab.com/)
+- [VSCode](https://code.visualstudio.com/)
+- [mermaid](https://mermaid-js.github.io/mermaid/#/)
