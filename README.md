@@ -17,9 +17,9 @@ Markdown 由[John Gruber](https://daringfireball.net/projects/markdown/)于2004�
 
 Markdown文件的优点：
 
-- 功能强大
+- 功能强大  
     可以创建网站、文档、便笺、书籍、演示文稿、电子邮件等等。
-- 简单明了
+- 简单明了  
     基本语法规则非常简单，大多数人可以快速上手
 - 开放性
   - 没有版权限制
@@ -35,10 +35,10 @@ Markdown文件的优点：
       - Windows：Ghostwriter或Markdown Monster
       - iOS/Android：iA Writer
       - Linux：ReText、代笔
-- 稳定性
+- 稳定性  
     即使上述所有应用程序将来在某个时候停止维护无法使用，仍然可以使用纯文本编辑应用程序读取Markdown格式的文本。
     > 当涉及需要无限期保存的书籍，大学论文和其他里程碑文件时，这是一个重要的考虑因素。
-- Markdown无处不在。
+- Markdown无处不在。  
     Reddit和GitHub等网站都支持Markdown，许多桌面和基于Web的应用程序都支持它。
 
 ### 1.2. 使用方式
