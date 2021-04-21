@@ -88,10 +88,11 @@ MPE插件：
 绝大多数代码托管网站，都原生支持Markdown文件作为项目的介绍文档。
 包括：
 
-- Github
-- Gitlab
-- Gitblit
-- Gitee
+- [Github](http://github.com)
+- [Stack Overflow](https://stackoverflow.com/)
+- [Gitlab.com](https://about.gitlab.com/)
+- [Gitblit](http://gitblit.github.io/gitblit/)
+- [Gitee](https://gitee.com/)
 - ...
 
 这里以Gitlab为例：
@@ -404,7 +405,7 @@ Markdown定义了两种列表：
 
 ### 3.1. 作图
 
-Markdown的作图增强语法插件有很多，最著名的有[Mermaid](https://mermaid-js.github.io/mermaid/#/)、Sequence和Flow。  
+Markdown的作图增强语法插件有很多，最著名的有[Mermaid](https://mermaid-js.github.io/mermaid/#/)、[Sequence](https://bramp.github.io/js-sequence-diagrams/)和[Flow](https://flowchart.js.org/)。  
 下面以Mermaid为例，简单显示几个作图的例子。
 
 #### 3.1.1. Mermaid
@@ -480,10 +481,26 @@ graph LR
 - 效果  
     ![toc](images/toc.png)
 
+### 3.3. 数学公式
+
+部分Markdown软件（例如MPE）支持自动转换数学公式。
+
+- $f(x) = sin(x)/3π$
+- $$ f(x,y) = \sum_{n=1}^{100} sin(2πnx)+cos(πny)+ß $$
+
+动态过程参考：
+![数学公式](https://cloud.githubusercontent.com/assets/1908863/14398210/0e408954-fda8-11e5-9eb4-562d7c0ca431.gif)
+
 ## 4. 参考资料
 
 - [Markdown中文网](http://markdown.p2hp.com/index.html)
 - [百度百科-markdown](https://baike.baidu.com/item/markdown/3245829?fr=aladdin)
+- [Github](http://github.com)
+- [Stack Overflow](https://stackoverflow.com/)
 - [Gitlab.com](https://about.gitlab.com/)
+- [Gitblit](http://gitblit.github.io/gitblit/)
+- [Gitee](https://gitee.com/)
 - [VSCode](https://code.visualstudio.com/)
 - [mermaid](https://mermaid-js.github.io/mermaid/#/)
+- [Sequence](https://bramp.github.io/js-sequence-diagrams/)
+- [Flow](https://flowchart.js.org/)
