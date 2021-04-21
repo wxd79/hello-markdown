@@ -41,6 +41,29 @@ Markdown 由[John Gruber](https://daringfireball.net/projects/markdown/)于2004�
 > PDF文件不好吗？为啥用Markdown？  
 > 同样是标记语言Markdown比HTML好在哪里？  
 
+```dot
+digraph G {
+    VSCode -> "开发IDE"
+    IDEA -> "开发IDE"
+    Eclipse -> "开发IDE"
+    "开发IDE" -> Markdown
+    Windows -> OS
+    Linux -> OS
+    Mac -> OS
+    OS -> Markdown
+    Markdown -> 版本管理
+    版本管理 -> Git
+    版本管理 -> SVN
+    Markdown -> 电子邮件
+    Markdown -> 网站
+    Markdown -> 文档
+    网站 -> Github
+    网站 -> Gitlab
+    网站 -> "Stack Overflow"
+    网站 -> "..."
+}
+```
+
 Markdown文件的优点：
 
 - 功能强大  
