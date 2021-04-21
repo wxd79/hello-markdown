@@ -25,6 +25,7 @@
       - [3.1.1. Mermaid](#311-mermaid )
     - [3.1.2. Markdown自动生成图片的优势](#312-markdown自动生成图片的优势 )
     - [3.2. TOC](#32-toc )
+    - [3.3. 数学公式](#33-数学公式 )
   - [4. 参考资料](#4-参考资料 )
 
 ## 1. Markdown是什么
@@ -187,7 +188,7 @@ Markdown中使用`#`符号（后跟半角空格）标记文章的标题。几级
     \# 虽然使用了“#”，但本行文字不是标题
     ```
 
-- 效果：    
+- 效果：  
     \# 虽然使用了“#”，但本行文字不是标题
 
 ### 2.3. 列表
@@ -501,6 +502,7 @@ graph LR
 - [Gitblit](http://gitblit.github.io/gitblit/)
 - [Gitee](https://gitee.com/)
 - [VSCode](https://code.visualstudio.com/)
+- [VSCode MPE插件](https://shd101wyy.github.io/markdown-preview-enhanced/#/)
 - [mermaid](https://mermaid-js.github.io/mermaid/#/)
 - [Sequence](https://bramp.github.io/js-sequence-diagrams/)
 - [Flow](https://flowchart.js.org/)
