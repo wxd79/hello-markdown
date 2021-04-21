@@ -76,7 +76,7 @@ MPE插件：
 
 - 在项目的主页面，Gitlab会直接根据`README.md`的内容生成项目介绍页面：  
     ![Gitlab](images/gitlab.png)
-- 在输入文字的界面（如Commit说明、Merge Request说明、issus说明等）基本也都支持Markdown  
+- 在输入文字的界面（如Commit说明、Merge Request说明、issus说明等）也都支持Markdown  
     ![Gitlab-commit1](images/gitlab-commit1.png)  
     ![Gitlab-commit2](images/gitlab-commit2.png)  
     ![Gitlab-commit3](images/gitlab-commit3.png)
@@ -106,6 +106,7 @@ Markdown中使用`#`符号（后跟半角空格）标记文章的标题。几级
 
 如果要像现在这样创建一个新的段落，两段文字中间留一个空行。
 > 注意：空行中不要有空格/tab等任何字符。
+在段落之中如果需要另起一行，除了正常的换行之外，在上一行的末尾要添加两个半角空格。
 
 - 示例：
 
@@ -113,13 +114,14 @@ Markdown中使用`#`符号（后跟半角空格）标记文章的标题。几级
     一行文字，注意本行最末尾以两个半角空格结尾。  
     另起一行。本行结尾没有两个空格，会和下一行合并显示。
     下一行文字。
-    
+
     另起一段，我是一个新的段落。
     ```
 
 - 效果：  
     一行文字，注意本行最末尾以两个半角空格结尾。  
-    另起一行。
+    另起一行。本行结尾没有两个空格，会和下一行合并显示。
+    下一行文字。
 
     另起一段，我是一个新的段落。
 
