@@ -34,7 +34,7 @@ Markdown文件的优点：
       - Mac：MacDown、iA Writer、Marked
       - Windows：Ghostwriter或Markdown Monster
       - iOS/Android：iA Writer
-      - Linux：ReText、代笔
+      - Linux：ReText、...
 - 稳定性  
     即使上述所有应用程序将来在某个时候停止维护无法使用，仍然可以使用纯文本编辑应用程序读取Markdown格式的文本。
     > 当涉及需要无限期保存的书籍，大学论文和其他里程碑文件时，这是一个重要的考虑因素。
@@ -46,7 +46,7 @@ Markdown文件的优点：
 #### 1.2.1. VSCode + MPE
 
 在主流IDE中，基本都是以插件的方式支持。
-以VSCode为例，有很多差价提供了Markdown的支持，其中目前最有名的，当属插件`shd101wyy.markdown-preview-enhanced`(简称：MPE)。
+以VSCode为例，有很多插件提供了Markdown的支持，其中目前最有名的，当属插件`shd101wyy.markdown-preview-enhanced`(简称：MPE)。
 
 MPE插件：  
 ![mpe](images/mpe.png)
@@ -383,7 +383,7 @@ Markdown定义了两种列表：
 
     ```mermaid
     graph LR
-    A[方形] -->B(圆角)
+        A[方形] -->B(圆角)
         B --> C{条件a}
         C -->|a=1| D[结果1]
         C -->|a=2| E[结果2]
@@ -416,18 +416,24 @@ Markdown定义了两种列表：
               需求                      :done,    des1, 2021-01-06,2021-01-08
               原型                      :active,  des2, 2021-01-09, 3d
               UI设计                     :         des3, after des2, 5d
-          未来任务                     :         des4, after des3, 5d
+              UE设计                     :         des4, after des3, 5d
               section 开发
-              学习准备理解需求                      :crit, done, 2021-01-06,24h
-              设计框架                             :crit, done, after des2, 2d
-              开发                                 :crit, active, 3d
-              未来任务                              :crit, 5d
-              耍                                   :2d
+              需求理解                             :crit, done, 2021-01-06,24h
+              框架设计                             :crit, done, after des2, 2d
+              Source开发                                 :crit, active, 3d
+              紧急任务                              :crit, 5d
+              大数据平台                                   :2d
               section 测试
               功能测试                              :active, a1, after des3, 3d
-              压力测试                               :after a1  , 20h
-              测试报告                               : 48h
+              压力测试                               :after a1  , 48h
+              测试报告                               : 8h
       ```
+
+### 3.2 Markdown自动生成图片的优势
+
+实际使用中最方便的是，简单的修改Markdown的文本，图中相应的内容就可以实时跟随变化。  
+如下图，不管是增加元素还是调整流程图的方向，右侧的图片都实时做出了反应。  
+![实时更新的图](images/change.gif)
 
 ## 4. 参考资料
 
