@@ -33,16 +33,6 @@
 Markdown是一种轻量级的标记语言，可用于将格式设置元素添加到纯文本文档中。  
 Markdown 由[John Gruber](https://daringfireball.net/projects/markdown/)于2004年创建，如今已成为世界上最受欢迎的标记语言之一。
 
-### 1.1. Markdown vs 各路英豪
-
-开始介绍Markdown之前，可能诸位有这些疑问：
-
-> 我已经有MS Office Word了，为什么还要用Markdown？  
-> PDF文件不好吗？为啥用Markdown？  
-> 同样是标记语言Markdown比HTML好在哪里？  
-
-Markdown文件的特点：
-
 ![overview](images/overview.png)
 
 - 功能强大  
@@ -72,6 +62,27 @@ Markdown文件的特点：
 - 兼容并蓄  
     即使上述所有应用程序、网站将来在某个时候停止维护无法使用，仍然可以使用纯文本编辑应用程序读取、复制或者修改Markdown格式的文本。
     > 当涉及需要无限期保存的书籍，大学论文和其他里程碑文件时，这是一个重要的考虑因素。
+
+### 1.1. Markdown vs 各路英豪
+
+开始介绍Markdown之前，可能诸位有这些疑问：
+
+> 我已经有MS Office Word了，为什么还要用Markdown？  
+> PDF文件不好吗？为啥用Markdown？  
+> 同样是标记语言Markdown比HTML区别在哪里？  
+
+- Markdown vs MS Office Word、PDF
+  - 优势
+    - 不依赖付费软件。
+    - 应用范围更广泛
+    - 结构简单，体积小巧
+    - 不会被病毒利用
+    - 没有不同版本间的兼容问题。
+  - 弱势
+    - 排版功能不如Word、PDF强大
+    - 本地图片需要额外保存，不能和文档一同处理。
+- Markdown vs HTML
+  - 应用范围不一样
 
 ### 1.2. 使用方式
 
