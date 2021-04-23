@@ -35,6 +35,49 @@
 Markdown是一种轻量级的标记语言，可用于将格式设置元素添加到纯文本文档中。  
 Markdown 由[John Gruber](https://daringfireball.net/projects/markdown/)于2004年创建，如今已成为世界上最受欢迎的标记语言之一。
 
+直观的来说，Markdown是`纯文本文件`，所以它直接看上去是这样的：
+
+```markdown
+# JenkinsでのCI/CD方法調査
+
+## 0.目次
+
+[toc]
+
+## 1. 概要
+
+### 1.1. CI/CD
+
+一般的に、CI/CDは、以下の3つのプロセスの略称である。
+継続的に集積し、継続的に納品し、持続的に展開する。
+
+- Continuous Integration - 継続的に集積
+- Continuous Delivery - 継続的に納品
+- Continuous Deployment - 持続的に配備
+
+## 2. Jenkins
+
+[Jenkins](https://www.jenkins.io/)は、ソフトウェアの構築、テスト、配信または展開に関連するあらゆる種類のタスクを自動化するために使用できる、自己完結型のオープンソース自動化サーバーである。  
+![Jenkins](images/jenkins.png)  
+
+jenkinsの主な優勢：
+
+- Continuous Integration and Continuous Delivery
+- Easy installation
+- Easy configuration
+
+### 2.1. Jenkinsのインストール
+
+...
+
+```
+
+**然而同时它也是这样的：**
+
+> ![渲染效果](images/sample.png)
+
+### 1.1. Markdown的特点
+
 ![overview](images/overview.png)
 
 - 功能强大  
@@ -65,7 +108,7 @@ Markdown 由[John Gruber](https://daringfireball.net/projects/markdown/)于2004�
     即使上述所有应用程序、网站将来在某个时候停止维护无法使用，仍然可以使用纯文本编辑应用程序读取、复制或者修改Markdown格式的文本。
     > 当涉及需要无限期保存的书籍，大学论文和其他里程碑文件时，这是一个重要的考虑因素。
 
-### 1.1. Markdown vs 各路英豪
+### 1.2. Markdown vs 各路英豪
 
 开始介绍Markdown之前，可能诸位有这些疑问：
 
@@ -86,12 +129,16 @@ Markdown 由[John Gruber](https://daringfireball.net/projects/markdown/)于2004�
 - Markdown vs HTML
   - 应用范围不一样
 
-### 1.2. 使用方式
+### 1.3. 编辑方式
 
-#### 1.2.1. VSCode + MPE
+由于本身就是纯文本文件，所有的文本编辑器都可以轻松编辑Markdown文件。
+而且主流的软件开发IDE更是通过插件的方式，提供了渲染等更高级的功能。
+如：IDEA、Eclipse、VSCode等。
+下面以VSCode为例，看看如何通过插件扩展VSCode的Markdown支持。
 
-在主流IDE中，基本都是以插件的方式支持Markdown。
-以VSCode为例，有很多插件提供了Markdown的支持，其中目前最有名的，当属插件`shd101wyy.markdown-preview-enhanced`(简称：MPE)。
+#### 1.3.1. VSCode + MPE
+
+VSCode中增强Markdown功能的插件很多，其中目前最有名的，当属插件`shd101wyy.markdown-preview-enhanced`(简称：MPE)。
 
 MPE插件：  
 ![mpe](images/mpe.png)
@@ -103,17 +150,18 @@ MPE插件：
 在渲染视图上右击，可以将渲染好的Markdown文件保存成PDF等其他格式的文件。
 ![mpe-veiw](images/mpe-saveas.png)
 
-#### 1.2.2 Gitlab
+MPE插件还提供了很多酷炫的markdown功能。详细内容可以参考 [3. 功能增强插件](#3-功能增强插件 )。
 
-绝大多数代码托管网站，都原生支持Markdown文件作为项目的介绍文档。
-包括：
+### 1.4. 使用方式
 
-- [Github](http://github.com)
-- [Stack Overflow](https://stackoverflow.com/)
-- [Gitlab.com](https://about.gitlab.com/)
-- [Gitblit](http://gitblit.github.io/gitblit/)
-- [Gitee](https://gitee.com/)
-- ...
+Markdown的应用非常广泛，但是在云应用流行的今天，最常用的莫过于利用其方便的格式控制能力。在网站上快捷方便的控制文字的格式，自动生成网页等。
+支持Markdown格式控制的网站数不胜数。这里简单介绍两个。
+
+#### 1.4.1 Gitlab
+
+代码托管网站，大多都原生支持Markdown文件作为项目的介绍文档。
+几乎所有的这类网站，默认都将项目根目录下的`README.md`作为项目的介绍文档。默认作为项目的主页展示。
+这些网站包括：[Github](http://github.com)、[Gitlab.com](https://about.gitlab.com/)、[Gitblit](http://gitblit.github.io/gitblit/)、[Gitee](https://gitee.com/)等等。
 
 这里以Gitlab为例：
 
@@ -127,24 +175,30 @@ MPE插件：
     ![Gitlab-commit2](images/gitlab-commit2.png)  
     ![Gitlab-commit3](images/gitlab-commit3.png)
 
+#### 1.4.2 Redmine
+
+Redmine作为项目管理网站，也是目前软件项目管理的当红明星。
+如果你使用Markdown记录项目文档，在Redmine中打开也可以直接展示。
+
+![redmine](images/redmine.png)
+
 ## 2. 基础语法
 
 Markdown之所以能够风靡世界，最重要的原因还是其基本规则非常简单。  
-其本质还是一个标准的文本文件，通常采用`.md`或者`.markdown`作为扩展名。  
-文本的书写遵照下述格式要求：
+在扩展名上，通常Markdown采用`.md`或者`.markdown`作为扩展名。  
+在内容上Markdown文本的书写遵照下述格式要求：
 
 ### 2.1. 标题
 
-文章中通常使用标题表示文章的逻辑结构：
 Markdown中使用`#`符号（后跟半角空格）标记文章的标题。几级标题就使用几个`#`号。
 如图：
 
 ![标题](images/title.png)
 
 > 有些功能在Markdown中的实现方法不止一种。  
-例如标题级别也可以用下一行接续```-----```和```======```来实现，这里不一一介绍。  
+例如：标题级别也可以用下一行接续```-----```和```======```来实现，这里不一一介绍。  
 有兴趣可以参考网络上大量的相关文档。  
-例如：[Markdown百度百科](https://baike.baidu.com/item/markdown/3245829?fr=aladdin)
+如：[Markdown百度百科](https://baike.baidu.com/item/markdown/3245829?fr=aladdin)
 
 ### 2.2. 段落
 
