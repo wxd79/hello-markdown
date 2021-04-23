@@ -105,7 +105,7 @@ Markdown 由[John Gruber](https://daringfireball.net/projects/markdown/)于2004�
 
 ### 1.2. Markdown vs 各路英豪
 
-开始介绍Markdown之前，可能诸位有这些疑问：
+可能诸位有这些疑问：
 
 > 我已经有MS Office Word了，为什么还要用Markdown？  
 > PDF文件不好吗？为啥用Markdown？  
@@ -534,15 +534,15 @@ Markdown的作图增强语法插件有很多，最著名的有[Mermaid](https://
 
 - 流程图
 
-```mermaid
-graph LR
-    A[方形] -->B(圆角)
-    B --> C{条件a}
-    C -->|a=1| D[结果1]
-    C -->|a=2| E[结果2]
-    C -->|a=3| F[结果3]
-    Z[横向流程图]
-```
+    ```mermaid
+    graph LR
+        A[方形] -->B(圆角)
+        B --> C{条件a}
+        C -->|a=1| D[结果1]
+        C -->|a=2| E[结果2]
+        C -->|a=3| F[结果3]
+        Z[横向流程图]
+    ```
 
 - 时序图
 
