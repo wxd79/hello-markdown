@@ -1,5 +1,49 @@
 # Markdown介绍
 
+- [Markdown介绍](#markdown介绍 )
+  - [1. Markdown是什么](#1-markdown是什么 )
+    - [1.1. Markdown的特点](#11-markdown的特点 )
+    - [1.2. Markdown vs 各路英豪](#12-markdown-vs-各路英豪 )
+    - [1.3. 编辑方式](#13-编辑方式 )
+      - [1.3.1. VSCode + MPE](#131-vscode-mpe )
+    - [1.4. 使用方式](#14-使用方式 )
+      - [1.4.1 Gitlab](#141-gitlab )
+      - [1.4.2 Redmine](#142-redmine )
+  - [2. 基础语法](#2-基础语法 )
+    - [2.1. 标题](#21-标题 )
+    - [2.2. 段落](#22-段落 )
+    - [2.2.1. 斜体](#221-斜体 )
+    - [2.2.2. 粗体](#222-粗体 )
+    - [2.2.3. 粗斜体](#223-粗斜体 )
+    - [2.2.4. 通常强调](#224-通常强调 )
+    - [2.2.5. 转义](#225-转义 )
+    - [2.3. 列表](#23-列表 )
+      - [2.3.1. 有序列表](#231-有序列表 )
+      - [2.3.1. 无序列表](#231-无序列表 )
+    - [2.4. 引用](#24-引用 )
+    - [2.5. 代码块](#25-代码块 )
+    - [2.6. 链接](#26-链接 )
+    - [2.7. 图片](#27-图片 )
+    - [2.8. 表格](#28-表格 )
+  - [3. 功能增强插件](#3-功能增强插件 )
+    - [3.1. 作图](#31-作图 )
+      - [3.1.1. Mermaid](#311-mermaid )
+    - [3.1.2. Markdown自动生成图片的优势](#312-markdown自动生成图片的优势 )
+    - [3.2. TOC](#32-toc )
+    - [3.3. 数学公式](#33-数学公式 )
+  - [4. 参考资料](#4-参考资料 )
+
+## 1. Markdown是什么
+
+Markdown是一种轻量级的标记语言，可用于将格式设置元素添加到纯文本文档中。  
+Markdown 由[John Gruber](https://daringfireball.net/projects/markdown/)于2004年创建，如今已成为世界上最受欢迎的标记语言之一。
+
+直观的来说，Markdown是`纯文本文件`，如果你用记事本打开我现在用的这个文档，所以它看上去大概是这个样子：
+
+```markdown
+
+# Markdown介绍
+
 [TOC]
 
 ## 1. Markdown是什么
@@ -7,78 +51,57 @@
 Markdown是一种轻量级的标记语言，可用于将格式设置元素添加到纯文本文档中。  
 Markdown 由[John Gruber](https://daringfireball.net/projects/markdown/)于2004年创建，如今已成为世界上最受欢迎的标记语言之一。
 
-直观的来说，Markdown是`纯文本文件`，所以它直接看上去是这样的：
+直观的来说，Markdown是`纯文本文件`，如果你用记事本打开我现在用的这个文档，所以它看上去大概是这个样子：
 
-```markdown
-# JenkinsでのCI/CD方法調査
-
-## 0.目次
-
-[toc]
-
-## 1. 概要
-
-### 1.1. CI/CD
-
-一般的に、CI/CDは、以下の3つのプロセスの略称である。
-継続的に集積し、継続的に納品し、持続的に展開する。
-
-- Continuous Integration - 継続的に集積
-- Continuous Delivery - 継続的に納品
-- Continuous Deployment - 持続的に配備
-
-## 2. Jenkins
-
-[Jenkins](https://www.jenkins.io/)は、ソフトウェアの構築、テスト、配信または展開に関連するあらゆる種類のタスクを自動化するために使用できる、自己完結型のオープンソース自動化サーバーである。  
-![Jenkins](images/jenkins.png)  
-
-jenkinsの主な優勢：
-
-- Continuous Integration and Continuous Delivery
-- Easy installation
-- Easy configuration
-
-### 2.1. Jenkinsのインストール
-
-...
-
-```
-
-然而遵守了Markdown规范的文档，就可以被软件/网站等表示（或者称为渲染）成这个样子：
-
-> ![渲染效果](images/sample.png)
+然而因为遵守了Markdown规范的文档，就可以被软件/网站等表示（或者称为渲染）成现在诸位看到的样子：
 
 ### 1.1. Markdown的特点
 
 ![overview](images/overview.png)
 
-- 功能强大  
+- **功能强大**  
     可以创建网站、文档、便笺、书籍、演示文稿、电子邮件等等。
-- 规则简单  
+- **规则简单**  
     基本语法规则简单，大多数人可以快速上手
-- 开放共享
+- **开放共享**
   - 没有版权限制
   - 没有操作系统限制
   - 可以直接在版本管理工具中进行Diff/Merge等操作
-- 应用广泛
-  - 网站
-    - GitHub
-    - Stack Overflow
-    - Reddit
-    - ...
-  - IDE
-    - IDEA
-    - VSCode
-    - Eclipse
-    - ...
+- **应用广泛**
+  - GitHub、Stack Overflow、Reddit等网站
+  - VSCode、IDEA、Eclipse等IDE
   - 软件
     - Mac：MacDown、iA Writer、Marked、...
     - Windows：Ghostwriter或Markdown Monster、...
     - iOS/Android：iA Writer、...
     - Linux：ReText、...
-- 兼容并蓄  
-    即使上述所有应用程序、网站将来在某个时候停止维护无法使用，仍然可以使用纯文本编辑应用程序读取、复制或者修改Markdown格式的文本。
-    > 当涉及需要无限期保存的书籍，大学论文和其他里程碑文件时，这是一个重要的考虑因素。
+
+### 1.2. Markdown vs 各路英豪
+
+```
+
+然而因为遵守了Markdown规范的文档，就可以被软件/网站等表示（或者称为渲染）成现在诸位看到的样子：
+
+### 1.1. Markdown的特点
+
+![overview](images/overview.png)
+
+- **功能强大**  
+    可以创建网站、文档、便笺、书籍、演示文稿、电子邮件等等。
+- **规则简单**  
+    基本语法规则简单，大多数人可以快速上手
+- **开放共享**
+  - 没有版权限制
+  - 没有操作系统限制
+  - 可以直接在版本管理工具中进行Diff/Merge等操作
+- **应用广泛**
+  - GitHub、Stack Overflow、Reddit等网站
+  - VSCode、IDEA、Eclipse等IDE
+  - 软件
+    - Mac：MacDown、iA Writer、Marked、...
+    - Windows：Ghostwriter或Markdown Monster、...
+    - iOS/Android：iA Writer、...
+    - Linux：ReText、...
 
 ### 1.2. Markdown vs 各路英豪
 
@@ -100,6 +123,7 @@ jenkinsの主な優勢：
     - 本地图片需要额外保存，不能和文档一同处理。
 - Markdown vs HTML
   - 应用范围不一样
+  - Markdown可以轻松转换成Html，甚至通过一些插件在浏览器里直接打开。
 
 ### 1.3. 编辑方式
 
