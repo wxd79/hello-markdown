@@ -57,7 +57,7 @@ Markdown 由[John Gruber](https://daringfireball.net/projects/markdown/)于2004�
 
 ### 1.1. Markdown的特点
 
-![overview](images/overview.png)
+![overview](./images/overview.png)
 
 - **功能强大**  
     可以创建网站、文档、便笺、书籍、演示文稿、电子邮件等等。
@@ -84,7 +84,7 @@ Markdown 由[John Gruber](https://daringfireball.net/projects/markdown/)于2004�
 
 ### 1.1. Markdown的特点
 
-![overview](images/overview.png)
+![overview](./images/overview.png)
 
 - **功能强大**  
     可以创建网站、文档、便笺、书籍、演示文稿、电子邮件等等。
@@ -137,14 +137,14 @@ Markdown 由[John Gruber](https://daringfireball.net/projects/markdown/)于2004�
 VSCode中增强Markdown功能的插件很多，其中目前最有名的，当属插件`shd101wyy.markdown-preview-enhanced`(简称：MPE)。
 
 MPE插件：  
-![mpe](images/mpe.png)
+![mpe](./images/mpe.png)
 
 安装后，可以通过右上角插件提供的渲染视图查看Markdown文档。
 修改Markdown文件时，渲染视图会实时联动。  
-![mpe-veiw](images/mpe-view.png)
+![mpe-veiw](./images/mpe-view.png)
 
 在渲染视图上右击，可以将渲染好的Markdown文件保存成PDF等其他格式的文件。
-![mpe-veiw](images/mpe-saveas.png)
+![mpe-veiw](./images/mpe-saveas.png)
 
 MPE插件还提供了很多酷炫的markdown功能。详细内容可以参考 [3. 功能增强插件](#3-功能增强插件 )。
 
@@ -165,18 +165,18 @@ Markdown的应用非常广泛，但是在云应用流行的今天，最常用的
 并将本文的内容拷贝进去。
 
 - 在项目的主页面，Gitlab会直接根据`README.md`的内容生成项目介绍页面：  
-    ![Gitlab](images/gitlab.png)
+    ![Gitlab](./images/gitlab.png)
 - 在输入文字的界面（如Commit说明、Merge Request说明、issus说明等）也都支持Markdown  
-    ![Gitlab-commit1](images/gitlab-commit1.png)  
-    ![Gitlab-commit2](images/gitlab-commit2.png)  
-    ![Gitlab-commit3](images/gitlab-commit3.png)
+    ![Gitlab-commit1](./images/gitlab-commit1.png)  
+    ![Gitlab-commit2](./images/gitlab-commit2.png)  
+    ![Gitlab-commit3](./images/gitlab-commit3.png)
 
 #### 1.4.2 Redmine
 
 Redmine作为项目管理网站，也是目前软件项目管理的当红明星。
 如果你使用Markdown记录项目文档，在Redmine中打开也可以直接展示。
 
-![redmine](images/redmine.png)
+![redmine](./images/redmine.png)
 
 ## 2. 基础语法
 
@@ -189,7 +189,7 @@ Markdown之所以能够风靡世界，最重要的原因还是其基本规则非
 Markdown中使用`#`符号（后跟半角空格）标记文章的标题。几级标题就使用几个`#`号。
 如图：
 
-![标题](images/title.png)
+![标题](./images/title.png)
 
 > 有些功能在Markdown中的实现方法不止一种。  
 例如：一、二标题级别也可以用下一行接续```-----```和```======```来实现，这里不一一介绍。  
@@ -421,7 +421,7 @@ Markdown定义了两种列表：
 代码块后面可以跟随相应语言的名称，例如Java，在支持的软件中，会利用颜色字体等对关键字进行强调处理。
 
 - 示例：  
-    ![method](images/method.png)
+    ![method](./images/method.png)
 - 效果：  
 
     ```java
@@ -586,7 +586,7 @@ Markdown的作图增强语法插件有很多，最著名的有[Mermaid](https://
 
 实际使用中最方便的是，简单的修改Markdown的文本，图中相应的内容就可以实时跟随变化。  
 如下图，不管是增加元素还是调整流程图的方向，右侧的图片都实时做出了反应。  
-![实时更新的图](images/change.gif)
+![实时更新的图](./images/change.gif)
 
 ### 3.2. TOC
 
@@ -595,10 +595,10 @@ Markdown的作图增强语法插件有很多，最著名的有[Mermaid](https://
 
 - 使用方法
   1. 在VSCode中安装TOC插件
-      ![TOC-plugin](images/toc-plugin.png)
+      ![TOC-plugin](./images/toc-plugin.png)
   1. 在希望插入目录的位置单独一行输入：`[TOC]`
 - 效果  
-    ![toc](images/toc.png)
+    ![toc](./images/toc.png)
 
 ### 3.3. 数学公式
 
